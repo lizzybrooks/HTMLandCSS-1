@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  
+  <title>Week 1: Web Skills</title>
+  
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/black.css">
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      
+      <section class="title-slide">
+        <h3 class="title-text">Week 1: Web Skills</h3>
+        <div class="sub-head">
+          <div class="sub-head-text"><span>INTRO TO THE ~ WEB ~</span></div>
+        </div>
+        <div class="title-slide-body">
+          09/11, 09/13, 09/15
+        </div>
+      </section>
+      
+      <section class="child-slide">
+        <h5>AGENDA</h5>
+        <div class="sub-head">
+          <div class="sub-head-text"><span>what we're doing today:</span></div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                <span>+ Environment setup</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                + Intro to HTML & CSS (sorry)
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                + Git setup & basics
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                + 😬 Homework 😬
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      
+      <section class="child-slide">
+        <h5>Environment Setup</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">if you have not already done so:</div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                + Install a modern web browser (Chrome preferred)
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                + Install a text editor (Atom, Sublime, VS Code, etc.)
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                + Create a GitHub account (required) & install GitHub Desktop <sup>*</sup>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                + Install iTerm (optional)
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="disclaimer"><sup>*</sup> optional if you'd prefer to use command line.</div>
+      </section>
+      
+      <section class="child-slide">
+        <h5>Code</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">download it<br/><br/>-----> <a href="#" target="_blank"><b>HERE</b></a> <-----</div>
+          <div class="disclaimer"><sup>*</sup> this is the only time we'll download code as a zip;<br/>moving forward we'll use git & github.</div>
+        </div>
+      </section>
+      
+      <section class="child-slide">
+        <h5>HTML</h5>
+        <div class="sub-head">
+          <div class="sub-head-text"><b>H</b>yper<b>T</b>ext <b>M</b>arkup <b>L</b>anguage</div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                <span>+ HTML defines the structure and presentation of our web page</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                + We write HTML using blocks of elements, consisting of tags <code>&#60; &#62;</code>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                + Some elements are used for describing and structuring text (e.g, <code>&#60;p&#62;, &#60;span&#62;)</code> 
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                + While others are used to contain content (e.g, <code>&#60;div&#62;</code>)
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="child-slide">
+        <h5>HTML</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">anatomy of an HTML page</div>
+        </div>
+        <div class="child-slide-body">
+          <pre>
+            <code data-trim data-noescape>
+              &lt;html&gt;
+                &lt;head&gt;
+                  &lt;title&gt;A basic web page&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                  &lt;div&gt;
+                    &lt;span&gt;Here is some text&lt;/span&gt;
+                  &lt;/div&gt;
+                &lt;/body&gt;
+              &lt;/html&gt;
+            </code>
+          </pre>
+        </div>
+      </section>
+
+      <section class="child-slide">
+        <h5>HTML</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">block & inline level elements</div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                <img class="child-slide-img" src="https://datashoptalk.com/wp-content/uploads/2018/02/block-v-inline.png" width="250" height="auto">
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      
+      <section class="child-slide">
+        <h5>HTML</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">What is 'semantic' HTML?</div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                + Elements are named to describe their meaning and purpose e.g., <code>&#60;nav&#62;</code>, <code>&#60;footer&#62;</code>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                + <span class="reading-indicator">READING</span> (to puruse): <a href="https://internetingishard.com/html-and-css/semantic-html/" target="_blank">Semantic HTML</a>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                + <span class="reading-indicator">READING</span> (to explore): <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank">MDN Web Docs: Elements</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="child-slide">
+        <h5>CSS</h5>
+        <div class="sub-head">
+          <div class="sub-head-text"><b>C</b>ascading <b>S</b>tyle <b>S</b>heets</div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                + CSS is markup language that describes the style of an HTML document
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                + CSS is written to apply style to elements at different levels of specificity
+              </div>
+            </li>
+            <!-- <li>
+              <div class="list-item-container">
+                + It looks easy, but CSS can be frustrating & annoying to work with 🤬 😭 😩
+              </div>
+            </li> -->
+            <li>
+              <div class="list-item-container">
+                <pre>
+                  <code data-trim data-noescape>
+                    /* Elements by tag */
+                    p {
+                      color: #000000;
+                    }
+
+                    /* Elements by tag and class name (using the . identifier) */
+                    div.content-container {
+                      background: #121212;
+                    }
+
+                    /* Elements by tag and id (using the # identifier) */
+                    span#my-custom-span {
+                      font-family: "Apercu-Pro", sans-serif;
+                      font-size: 12px;
+                    }
+
+                    /* Child elements of a specific element */
+                    ul#my-custom-list > li {
+                      list-style-type: none;
+                    }
+                  </code>
+                </pre>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="child-slide">
+        <h5>CSS</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">Inline vs External/Linked CSS</div>
+        </div>
+        <div class="child-slide-body">
+          <pre>
+            <code data-trim data-noescape>
+              &lt;!-- Inline CSS--&gt;
+              &lt;div style=&quot;background-color:#000000; padding:20px;&quot;&gt;
+                &lt;p style=&quot;color:#FFFFFF; text-transform:uppercase; font-size:20px;&quot;&gt;
+                  Here is some styled text inside of a styled container
+                &lt;/p&gt;
+              &lt;/div&gt;
+            </code>
+          </pre>
+          <pre>
+            <code data-trim data-noescape>
+              &lt;!-- External CSS--&gt;
+              &lt;div class=&quot;my-custom-div&quot;&gt;
+                &lt;p class=&quot;my-custom-paragraph&quot;&gt;
+                  Here is some text, styled externally
+                &lt;/p&gt;
+              &lt;/div&gt;
+
+              &lt;style&gt;
+                .my-custom-div {
+                  background-color: #000000; 
+                  padding: 20px;
+                }
+
+                .my-custom-paragraph {
+                  color: #FFFFFF;
+                  text-transform: uppercase;
+                  font-size: 20px;
+                }
+              &lt;/style&gt;
+            </code>
+          </pre>
+          <pre>
+            <code data-trim data-noescape>
+              &lt;!-- External & Linked CSS--&gt;
+              &lt;html&gt;
+                &lt;head&gt;
+                  &lt;title&gt;&lt;/title&gt;
+                  &lt;link rel=&quot;stylesheet&quot; href=&quot;css/style.css&quot;&gt;
+                &lt;/head&gt;
+                &lt;!-- body, etc ... --&gt;
+              &lt;/html&gt;
+            </code>
+          </pre>
+        </div>
+      </section>
+      
+    </div>
+  </div>
+</body>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+<script>
+  // ---------------------------------------------
+  init();
+  
+  // ---------------------------------------------
+  let content = [
+  {
+    slideType: "title",
+    slideTitle: "Week 1: Web Skills",
+    subHeadText: "Intro to HTML & CSS"
+  },
+  {
+    slideType: "child",
+    slideTitle: "Agenda",
+    subHeadText: "what we're doing today:",
+    childBody: {
+      
+    }
+  }
+  ];
+  
+  // ---------------------------------------------
+  function init() {
+    Reveal.initialize({
+      dependencies: [
+        { 
+          src: 'plugin/highlight/highlight.js', 
+          async: true, 
+          callback: function() { hljs.initHighlightingOnLoad(); } 
+        }
+      ]
+    });
+
+    Reveal.configure({
+      slideNumber: true,
+      slideNumber: 'c/t'
+    });
+
+    generateSlides();
+  }
+  
+  // ---------------------------------------------
+  function generateSlides() {
+    
+  }
+  
+</script>
+
+</html>

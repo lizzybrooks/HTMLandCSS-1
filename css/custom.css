@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400|Source+Code+Pro:200,300,400');
+
+body {
+  background-color: #151515!important;
+}
+
+div.sub-head-text {
+  font-family: "Source Code Pro", monospace;
+  font-weight: 200;
+  font-size: 14px;
+}
+
+h3.title-text {
+
+  color: #1bc4ff!important;
+}
+
+h5 {
+  text-transform: uppercase;
+  color: #1bc4ff!important;
+}
+
+div.disclaimer, div.title-slide-body {
+  font-family: "Source Code Pro", monospace;
+  font-size: 10px;
+  padding: 32px;
+  line-height: 20px;
+}
+
+div.child-slide-body {
+  font-family: "Source Code Pro", monospace;
+  font-weight: 100;
+  font-size: 16px;
+  padding: 48px 0px 0px 0px;
+}
+
+ul.child-slide-body-list {
+  margin: 0px!important;
+}
+
+ul.child-slide-body-list > li {
+  list-style-type: none;
+  display: block;
+}
+
+div.list-item-container {
+  padding: 8px 0px 8px 0px;
+}
+
+span.reading-indicator {
+  font-weight: bold;
+  color: #c10bf4;
+}
+
+img.child-slide-img {
+  display: block!important;
+  margin-left: auto!important;
+  margin-right: auto!important;
+  margin: 0px!important;
+}
+
+.hljs {
+  background: #2f2f2f!important;
+}
+
+.reveal pre {
+  width: 60%!important;
+}
+
+/* .reveal span {
+  color:#1bc4ff;
+} */
