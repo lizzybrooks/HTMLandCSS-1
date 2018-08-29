@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400|Source+Code+Pro:200,300,400');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:100,200,500|Source+Code+Pro:200,300,400');
 
 body {
   background-color: #151515!important;
@@ -6,41 +6,47 @@ body {
 
 div.sub-head-text {
   font-family: "Source Code Pro", monospace;
-  font-weight: 200;
-  font-size: 14px;
+  font-weight: 300;
+  font-size: 16px;
+  color: #ff6efc;
+  text-transform: uppercase;
 }
 
 h3.title-text {
-
+  font-family: "Source Code Pro", monospace!important;
+  font-weight: 300!important;
   color: #1bc4ff!important;
 }
 
 h5 {
+  font-family: "Source Code Pro", monospace!important;
+  font-weight: 300!important;
   text-transform: uppercase;
   color: #1bc4ff!important;
+  margin-bottom: 12px!important;
 }
 
 div.disclaimer, div.title-slide-body {
   font-family: "Source Code Pro", monospace;
-  font-size: 10px;
+  font-size: 14px;
   padding: 32px;
-  line-height: 20px;
+  line-height: 32px;
 }
 
 div.child-slide-body {
-  font-family: "Source Code Pro", monospace;
-  font-weight: 100;
-  font-size: 16px;
-  padding: 48px 0px 0px 0px;
-}
-
-ul.child-slide-body-list {
-  margin: 0px!important;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+  padding: 32px 0px 0px 0px;
 }
 
 ul.child-slide-body-list > li {
   list-style-type: none;
-  display: block;
+  /* display: block; */
+}
+
+div.list-item-container > span {
+  padding-left: 16px;
 }
 
 div.list-item-container {
@@ -48,7 +54,7 @@ div.list-item-container {
 }
 
 span.reading-indicator {
-  font-weight: bold;
+  font-weight: 500;
   color: #c10bf4;
 }
 
@@ -56,7 +62,6 @@ img.child-slide-img {
   display: block!important;
   margin-left: auto!important;
   margin-right: auto!important;
-  margin: 0px!important;
 }
 
 .hljs {
@@ -64,9 +69,16 @@ img.child-slide-img {
 }
 
 .reveal pre {
-  width: 60%!important;
+  width: 80%!important;
+  font-size: 0.6em!important;
+  box-shadow: none!important;
+  margin: 0px auto!important;
 }
 
-/* .reveal span {
-  color:#1bc4ff;
-} */
+.reveal pre code {
+  padding: 16px;
+}
+
+.reveal sup {
+  vertical-align: top;
+}
