@@ -55,17 +55,17 @@
             </li>
             <li>
               <div class="list-item-container">
-                +<span>Download examples, run a local server</span>
+                +<span>Git & GitHub: Cloning your first repo, Git Basics I</span>
               </div>
             </li>
             <li>
               <div class="list-item-container">
-                +<span>Javascript fundamentals</span>
+                +<span>Running a local server</span>
               </div>
             </li>
             <li>
               <div class="list-item-container">
-                +<span>Git & GitHub: Getting Started</span>
+                +<span>Javascript & the DOM</span>
               </div>
             </li>
             <li>
@@ -130,7 +130,7 @@
           </ul>
         </div>
       </section>
-            
+      
       <!-- ------------- -->
       <section class="child-slide">
         <h5>HTML</h5>
@@ -164,7 +164,7 @@
           </ul>
         </div>
       </section>
-
+      
       <!-- ------------- -->
       <section class="child-slide">
         <h5>HTML</h5>
@@ -191,7 +191,8 @@
           </pre>
         </div>
       </section>
-
+      
+      <!-- ------------- -->
       <section class="child-slide">
         <h5>HTML</h5>
         <div class="sub-head">
@@ -204,6 +205,7 @@
         </div>
       </section>
       
+      <!-- ------------- -->
       <section class="child-slide">
         <h5>HTML</h5>
         <div class="sub-head">
@@ -213,7 +215,7 @@
           <ul class="child-slide-body-list">
             <li>
               <div class="list-item-container">
-                + <span>Elements are named to describe their meaning and purpose e.g., <code>&#60;nav&#62;</code>, <code>&#60;footer&#62;</code></span>
+                + <span>Elements are named to describe their meaning and purpose e.g., <code>&#60;nav&#62;</code>, <code>&#60;footer&#62;</code>, <code>&#60;audio&#62;</code></span>
               </div>
             </li>
             <li>
@@ -231,10 +233,11 @@
                 + <span class="reading-indicator">READING</span> (to explore): <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank">MDN Web Docs: Elements</a>
               </div>
             </li>
-        </ul>
+          </ul>
         </div>
       </section>
-
+      
+      <!-- ------------- -->
       <section class="child-slide">
         <h5>CSS</h5>
         <div class="sub-head">
@@ -260,18 +263,18 @@
                     p {
                       color: #000000;
                     }
-
+                    
                     /* Elements by tag and class name (using the . identifier) */
                     div.content-container {
                       background: #121212;
                     }
-
+                    
                     /* Elements by tag and id (using the # identifier) */
                     span#my-custom-span {
                       font-family: "Apercu-Pro", sans-serif;
                       font-size: 12px;
                     }
-
+                    
                     /* Child elements of a specific element */
                     ul#my-custom-list > li {
                       list-style-type: none;
@@ -283,89 +286,68 @@
           </ul>
         </div>
       </section>
-
+      
       <!-- ------------- -->
       <section class="child-slide">
         <h5>CSS</h5>
         <div class="sub-head">
-          <div class="sub-head-text">Inline vs External CSS</div>
+          <div class="sub-head-text">External & linked CSS</div>
         </div>
         <div class="child-slide-body">
           <pre>
             <code data-trim data-noescape>
-              &lt;!-- Inline CSS--&gt;
-              &lt;div style=&quot;background-color:#000000; padding:20px;&quot;&gt;
-                &lt;p style=&quot;color:#ffffff; text-transform:uppercase; font-size:20px;&quot;&gt;
-                  Here is some styled text inside of a styled container
-                &lt;/p&gt;
-              &lt;/div&gt;
+              &lt;!-- External & Linked CSS--&gt;
+              &lt;!DOCTYPE html&gt;
+              &lt;html&gt;
+                &lt;head&gt;
+                  &lt;title&gt;Welcome to My Website&lt;/title&gt;
+                  &lt;link rel=&quot;stylesheet&quot; href=&quot;css/style.css&quot;&gt;
+                &lt;/head&gt;
+                &lt;!-- body, etc ... --&gt;
+              &lt;/html&gt;
             </code>
           </pre>
           <pre>
             <code data-trim data-noescape>
-              &lt;!-- External CSS--&gt;
-              &lt;div class=&quot;my-custom-div&quot;&gt;
-                &lt;p class=&quot;my-custom-paragraph&quot;&gt;
-                  Here is some text, styled externally
-                &lt;/p&gt;
-              &lt;/div&gt;
-
-              &lt;style&gt;
-                .my-custom-div {
-                  background-color: #000000; 
-                  padding: 20px;
-                }
-
-                .my-custom-paragraph {
-                  color: #ffffff;
-                  text-transform: uppercase;
-                  font-size: 20px;
-                }
-              &lt;/style&gt;
+              /* css/style.css */
+              .my-custom-div {
+                background-color: #000000; 
+                padding: 20px;
+              }
+              
+              .my-custom-paragraph {
+                color: #FFFFFF;
+                text-transform: uppercase;
+                font-size: 20px;
+              }
             </code>
           </pre>
+          
         </div>
       </section>
-
+      
       <!-- ------------- -->
       <section class="child-slide">
           <h5>CSS</h5>
           <div class="sub-head">
-            <div class="sub-head-text">External & linked CSS</div>
+            <div class="sub-head-text">can be pretty complex, and can be used for making art!</div>
           </div>
           <div class="child-slide-body">
-            <pre>
-              <code data-trim data-noescape>
-                &lt;!-- External & Linked CSS--&gt;
-                &lt;!DOCTYPE html&gt;
-                &lt;html&gt;
-                  &lt;head&gt;
-                    &lt;title&gt;Welcome to My Website&lt;/title&gt;
-                    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/style.css&quot;&gt;
-                  &lt;/head&gt;
-                  &lt;!-- body, etc ... --&gt;
-                &lt;/html&gt;
-              </code>
-            </pre>
-            <pre>
-              <code data-trim data-noescape>
-                /* css/style.css */
-                .my-custom-div {
-                  background-color: #000000; 
-                  padding: 20px;
-                }
-
-                .my-custom-paragraph {
-                  color: #FFFFFF;
-                  text-transform: uppercase;
-                  font-size: 20px;
-                }
-              </code>
-            </pre>
-            
+            <ul class="child-slide-body-list">
+              <li>
+                <div class="list-item-container">
+                  +<span><a href="http://diana-adrianne.com/purecss-francine/" target="_blank">Francine</a></span>
+                </div>
+              </li>
+              <li>
+                <div class="list-item-container">
+                  +<span><a href="https://www.clicktorelease.com/code/css3dclouds/" target="_blank">CSS 3D Clouds</a></span>
+                </div>
+              </li>
+            </ul>
           </div>
         </section>
-
+      
       <!-- ------------- -->
       <section class="child-slide">
         <h5>Dev Tools: Inspector</h5>
@@ -399,7 +381,49 @@
           </ul>
         </div>
       </section>
-
+      
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Dev Tools: Inspector</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>Using the inspector</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <span>🎉 DEMO TIME 🎉</span>
+        </div>
+      </section>
+      
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Git & GitHub</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>Why are we learning this?</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                +<span>Open collaboration, open source, open communities</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                +<span>To build good habits early</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                +<span>In the long term it will save you time and energy</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      
       <!-- ------------- -->
       <section class="child-slide">
         <h5>Git & GitHub</h5>
@@ -426,7 +450,7 @@
           <span><sup>*</sup> optional if you'd prefer to use command line.</span>
         </div>
       </section>
-
+      
       <!-- ------------- -->
       <section class="child-slide">
         <h5>Git</h5>
@@ -460,7 +484,7 @@
           </ul>
         </div>
       </section>
-
+      
       <!-- ------------- -->
       <section class="child-slide">
         <h5>GitHub</h5>
@@ -483,26 +507,26 @@
             </li>
             <li>
               <div class="list-item-container">
-                +<span>There are other hosting services out there (SourceTree, GitLab)</span>
+                +<span>There are other hosting services out there (Bitbucket, GitLab)</span>
               </div>
             </li>
           </ul>
         </div>
       </section>
-
+      
       <!-- ------------- -->
       <section class="child-slide">
-        <h5>Git Basics</h5>
+        <h5>Git Basics I: Cloning your first repo</h5>
         <div class="sub-head">
           <div class="sub-head-text">
-            <span>Basic terminology & commands to unpack</span>
+            <span>Basic terminology & commands</span>
           </div>
         </div>
         <div class="child-slide-body">
           <ul class="child-slide-body-list">
             <li>
               <div class="list-item-container">
-                +<span>We will start using Git by 'cloning' an existing remote repo</span>
+                +<span>We will start using Git by 'cloning' an existing repo</span>
               </div>
             </li>
             <li>
@@ -514,29 +538,57 @@
               <div class="list-item-container">
                 +<span><b>Cloning</b> a repo refers to making a copy of it locally (downloaded to your machine)</span>
               </div>
-            </li>
-            <li>
-              <div class="list-item-container">
-                +<span>We clone a repo using Git's clone command, passing in the remote repo's url</span>
-              </div>
-            </li>
+            </li>            
           </ul>
         </div>
       </section>
-
+      
       <!-- ------------- -->
       <section class="child-slide">
-        <h5>Cloning your first repo</h5>
+        <h5>Git Basics I: Cloning your first repo</h5>
         <div class="sub-head">
           <div class="sub-head-text">
-            <span>Cloning with GitHub Desktop</span>
+            <span>Cloning with <u><b>GitHub Desktop</b></u></span>
           </div>
         </div>
         <div class="child-slide-body">
           <ul class="child-slide-body-list">
             <li>
               <div class="list-item-container">
-                +<span>link to repo <b><a href="#" target="_blank">here</a></b></span>
+                +<span>link to repo <a href="#" target="_blank">here</a></span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                <img class="child-slide-img" src="https://ashfurrow.com/img/blog/resolving-github-merge-conflicts/url.png" width="400" height="auto"/>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Git Basics I: Cloning your first repo</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>Cloning with <u><b>command line</b></u></span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                +<span>link to repo <a href="#" target="_blank">here</a></span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                <pre>
+                  <code data-trim data-noescape>
+                    #TODO
+                  </code>
+                </pre>
               </div>
             </li>
           </ul>
@@ -545,22 +597,159 @@
 
       <!-- ------------- -->
       <section class="child-slide">
-          <h5>Cloning your first repo</h5>
-          <div class="sub-head">
-            <div class="sub-head-text">
-              <span>Cloning with command line</span>
-            </div>
+        <h5>What's inside the repo?</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>Open your repo in your text editor of choice</span>
           </div>
-          <div class="child-slide-body">
-            <ul class="child-slide-body-list">
-              <li>
-                <div class="list-item-container">
-                  +<span>link to repo <a href="#" target="_blank">here</a></span>
-                </div>
-              </li>
-            </ul>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                +<span>TODO</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Terminal basics</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>Some quick useful things</span>
           </div>
-        </section>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                +<span>You will need to <code>cd</code> into the repo you have just downloaded</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                +<span>Where did you clone your repo?</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                <pre>
+                  <code data-trim data-noescape>
+                    # lists your current working directory
+                    Rachels-MacBook-Pro:~ rosewater$ pwd
+                    /Users/rosewater
+
+                    # ls - list items in your current working directory
+                    Rachels-MacBook-Pro:~ rosewater$ ls
+                    Applications
+                    Desktop
+                    Documents
+                    Downloads
+                    # etc...
+                    
+                    # change your working directory (one level deeper)
+                    Rachels-MacBook-Pro:~ rosewater$ cd Documents/my_new_folder
+                    Rachels-MacBook-Pro:my_new_folder rosewater$ pwd
+                    /Users/rosewater/Documents/my_new_folder
+
+                    # change your working direcotry (one level back out)
+                    Rachels-MacBook-Pro:my_new_folder rosewater$ cd ..
+                    Rachels-MacBook-Pro:Documents rosewater$ pwd
+                    /Users/rosewater/Documents
+                  </code>
+                </pre>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Running a local server</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>Why do we need to do this?</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                +<span>You should get in the habit of using a local server, even when working with static files</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                +<span>You won't be able to access your file system (e.g, if you need to load in an image)</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                +<span>You won't be able to make http requests, like when working with an API</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Running a local server</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>2 ways</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                +<span><a href="https://atom.io/packages/atom-live-server" target="_blank">Atom Live Server</a> package, for Atom users</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                +<span>Running in the terminal</span>
+                <pre>
+                  <code data-trim data-noescape>
+                    # Check what version of Python is installed
+                    python -V
+                    
+                    # above 3.X
+                    python -m http.server 3000
+                    
+                    # above 2.X
+                    python -m SimpleHTTPServer 3000
+                  </code>
+                </pre>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Class Exercise I</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>/exercises/exercise-1</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                +<span></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
       
       <!-- ------------- -->
       <section class="child-slide">
@@ -583,7 +772,7 @@
           </ul>
         </div>
       </section>
-
+      
     </div>
   </div>
 </body>
@@ -596,38 +785,38 @@
   
   // ---------------------------------------------
   let content = [
-    {
-      slideType: "title",
-      slideTitle: "Week 1: Web Skills",
-      subHeadText: "Intro to HTML & CSS"
-    },
-    {
-      slideType: "child",
-      slideTitle: "Agenda",
-      subHeadText: "what we're doing today:",
-      childBody: {
-        
-      }
+  {
+    slideType: "title",
+    slideTitle: "Week 1: Web Skills",
+    subHeadText: "Intro to HTML & CSS"
+  },
+  {
+    slideType: "child",
+    slideTitle: "Agenda",
+    subHeadText: "what we're doing today:",
+    childBody: {
+      
     }
+  }
   ];
   
   // ---------------------------------------------
   function init() {
     Reveal.initialize({
       dependencies: [
-        { 
-          src: 'plugin/highlight/highlight.js', 
-          async: true, 
-          callback: function() { hljs.initHighlightingOnLoad(); } 
-        }
+      { 
+        src: 'plugin/highlight/highlight.js', 
+        async: true, 
+        callback: function() { hljs.initHighlightingOnLoad(); } 
+      }
       ]
     });
-
+    
     Reveal.configure({
       slideNumber: true,
       slideNumber: 'c/t'
     });
-
+    
     generateSlides();
   }
   
