@@ -19,12 +19,12 @@
       
       <!-- ------------- -->
       <section class="title-slide">
-        <h3 class="title-text">Week 1: Web Skills</h3>
+        <h3 class="title-text">MAKING ART ON THE WEB</h3>
         <div class="sub-head">
-          <div class="sub-head-text"><span>INTRO TO THE ~ WEB ~</span></div>
+          <div class="sub-head-text"><span>Day 1: Intros & Environment Setup</span></div>
         </div>
         <div class="title-slide-body">
-          <span>09/11, 09/13, 09/15</span>
+          <span>09.11.18</span>
         </div>
       </section>
       
@@ -45,7 +45,12 @@
             </li>
             <li>
               <div class="list-item-container">
-                +<span>Intro to HTML & CSS (sorry)</span>
+                +<span>HTML & CSS fundamentals</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                +<span>Class exercises</span>
               </div>
             </li>
             <li>
@@ -87,11 +92,6 @@
           <ul class="child-slide-body-list">
             <li>
               <div class="list-item-container">
-                +<span>This program isn't meant to teach you to be a professional developer</span>
-              </div>
-            </li>
-            <li>
-              <div class="list-item-container">
                 +<span>In this class we won't cover working with frameworks like React, Vue, Angular</span>
               </div>
             </li>
@@ -125,6 +125,25 @@
             <li>
               <div class="list-item-container">
                 +<span>Install iTerm (optional)</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Code</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>Download it <a href="" target="_blank">here</a></span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                +<span>Then open the directory in your editor of choice</span>
               </div>
             </li>
           </ul>
@@ -176,6 +195,8 @@
         <div class="child-slide-body">
           <pre>
             <code data-trim data-noescape>
+              &lt;!-- /exercises/01-intro-to-html.html --&gt;
+
               &lt;!DOCTYPE html&gt;
               &lt;html&gt;
                 &lt;head&gt;
@@ -286,43 +307,141 @@
           </ul>
         </div>
       </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>CSS</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">Inline CSS</div>
+        </div>
+        <div class="child-slide-body">
+          <pre>
+            <code data-trim data-noescape>
+              &lt;!-- /exercises/02-inline-css.html --&gt;
+
+              &lt;!DOCTYPE html&gt;
+              &lt;html&gt;
+                &lt;head&gt;
+                  &lt;title&gt;Inline CSS&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                &lt;div style=&quot;background-color: #000000; padding: 20px;&quot;&gt;
+                  &lt;p style=&quot;color: #c383f2; text-transform:uppercase; font-size: 36px;&quot;&gt;
+                    Here is my styled paragraph inside a styled div.
+                  &lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/body&gt;
+              &lt;/html&gt;
+            </code>
+          </pre>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>CSS</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">Internal CSS</div>
+        </div>
+        <div class="child-slide-body">
+          <pre>
+            <code data-trim data-noescape>
+              &lt;!-- /exercises/03-internal-css.html --&gt;
+
+              &lt;!DOCTYPE html&gt;
+              &lt;html&gt;
+                &lt;head&gt;
+                  &lt;title&gt;Internal CSS&lt;/title&gt;
+
+                  &lt;style&gt;
+                    .my-custom-div {
+                      background-color: #000000; 
+                      padding: 20px;
+                    }
+
+                    .my-custom-paragraph {
+                      color: #c383f2;
+                      text-transform: uppercase;
+                      font-size: 36px;
+                    }
+                  &lt;/style&gt;
+
+                &lt;/head&gt;
+                &lt;body&gt;
+                &lt;div class=&quot;my-custom-div&quot;&gt;
+                  &lt;p class=&quot;my-custom-paragraph&quot;&gt;
+                    Here is my styled paragraph inside a styled div.
+                  &lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/body&gt;
+              &lt;/html&gt;
+            </code>
+          </pre>
+        </div>
+      </section>
       
       <!-- ------------- -->
       <section class="child-slide">
         <h5>CSS</h5>
         <div class="sub-head">
-          <div class="sub-head-text">External & linked CSS</div>
+          <div class="sub-head-text">External CSS</div>
         </div>
         <div class="child-slide-body">
           <pre>
             <code data-trim data-noescape>
-              &lt;!-- External & Linked CSS--&gt;
+              &lt;!-- /exercises/04-external-css.html --&gt;
+
               &lt;!DOCTYPE html&gt;
               &lt;html&gt;
                 &lt;head&gt;
-                  &lt;title&gt;Welcome to My Website&lt;/title&gt;
-                  &lt;link rel=&quot;stylesheet&quot; href=&quot;css/style.css&quot;&gt;
+                  &lt;title&gt;External CSS&lt;/title&gt;
+                  &lt;link rel=&quot;stylesheet&quot; href=&quot;../css/04-style.css&quot;&gt;
                 &lt;/head&gt;
-                &lt;!-- body, etc ... --&gt;
+                &lt;body&gt;
+                &lt;div class=&quot;my-custom-div&quot;&gt;
+                  &lt;p class=&quot;my-custom-paragraph&quot;&gt;
+                    Here is my styled paragraph inside a styled div.
+                  &lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/body&gt;
               &lt;/html&gt;
             </code>
           </pre>
           <pre>
             <code data-trim data-noescape>
-              /* css/style.css */
+              /* css/04-style.css */
               .my-custom-div {
                 background-color: #000000; 
                 padding: 20px;
               }
-              
+        
               .my-custom-paragraph {
-                color: #FFFFFF;
+                color: #c383f2;
                 text-transform: uppercase;
-                font-size: 20px;
+                font-size: 36px;
               }
             </code>
           </pre>
           
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Exercise I - Ode to Mondrian</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>/exercises/05-ode-to-mondrian.html</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                +<span>Use square dimensions: 400px x 400px</span>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
       
@@ -352,10 +471,33 @@
       <section class="child-slide">
         <h5>CSS</h5>
         <div class="sub-head">
-          <div class="sub-head-text">CSS3 Animations & 3D Transforms</div>
+          <div class="sub-head-text">CSS3 Easing Animations</div>
         </div>
         <div class="child-slide-body">
-          +<span>While CSS gets a bad rap & looks easy, it's actually pretty powerful</span>
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                +<span></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>CSS</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">CSS3 3D Transforms</div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                +<span></span>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
       
@@ -700,6 +842,11 @@
                 +<span>You won't be able to make http requests, like when working with an API</span>
               </div>
             </li>
+            <li>
+              <div class="list-item-container">
+                +<span class="reading-indicator">READING</span> (to puruse): <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server" target="_blank">MDN Web Docs - Setup a Local Testing Server</a>
+              </div>
+            </li>
           </ul>
         </div>
       </section>
@@ -734,25 +881,6 @@
                     python -m SimpleHTTPServer 3000
                   </code>
                 </pre>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- ------------- -->
-      <section class="child-slide">
-        <h5>Class Exercise I - Piet Mondrian</h5>
-        <div class="sub-head">
-          <div class="sub-head-text">
-            <span>/exercises/exercise-1</span>
-          </div>
-        </div>
-        <div class="child-slide-body">
-          <ul class="child-slide-body-list">
-            <li>
-              <div class="list-item-container">
-                +<span></span>
               </div>
             </li>
           </ul>
