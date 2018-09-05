@@ -195,3 +195,54 @@ h1#make-art-css {
 	color: white;
 	font-family: "Georgia", serif;
 }
+
+/* Easing */
+div#anim-circles-container {
+  margin: 32px;
+  padding-bottom: 32px;
+}
+
+div.anim-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  opacity: 0.7;
+  position: absolute;
+}
+
+div#circle-1 {
+  -webkit-animation: my-animation 2s ease 0s infinite alternate;
+  animation: my-animation 2s ease 0s infinite alternate;
+}
+
+div#circle-2 {
+  -webkit-animation: my-animation 2s ease 0s infinite alternate;
+  animation: my-animation 2s linear 0s infinite alternate;
+}
+
+div#circle-3 {
+  -webkit-animation: my-animation 2s ease 0s infinite alternate;
+  animation: my-animation 2s ease-in 0s infinite alternate;
+}
+
+div#circle-4 {
+  -webkit-animation: my-animation 2s ease 0s infinite alternate;
+  animation: my-animation 2s ease-out 0s infinite alternate;
+}
+
+div#circle-5 {
+  -webkit-animation: my-animation 2s ease 0s infinite alternate;
+  animation: my-animation 5s ease-in-out 0s infinite alternate;
+}
+
+@keyframes my-animation {
+  0% {
+    background: #FFA500;
+    left: 10%;
+  }
+
+  100% {
+    background: #00caff;
+    left: 90%;
+  }
+}

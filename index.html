@@ -428,6 +428,50 @@
 
       <!-- ------------- -->
       <section class="child-slide">
+          <h5>Dev Tools: Using the Inspector</h5>
+          <div class="sub-head">
+            <div class="sub-head-text">
+              <span>3 ways to see the inspector</span>
+            </div>
+          </div>
+          <div class="child-slide-body">
+            <ul class="child-slide-body-list">
+              <li>
+                <div class="list-item-container">
+                  +<span>Go to any website, even these slides, and hit <code>cmd + option + i</code></span>
+                </div>
+              </li>
+              <li>
+                <div class="list-item-container">
+                  +<span>Or View > Developer > Developer Tools</span>
+                </div>
+              </li>
+              <li>
+                <div class="list-item-container">
+                  +<span>Or right click in a webpage and click 'Inspect'</span>
+                </div>
+              </li>
+              <li>
+                <div class="list-item-container">
+                  <img class="child-slide-img" src="https://developers.google.com/web/tools/chrome-devtools/inspect-styles/imgs/elements-panel.png" width="500" height="auto">
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        
+        <!-- ------------- -->
+        <section class="child-slide">
+          <h5>Dev Tools: Inspector</h5>
+          <div class="sub-head">
+            <div class="sub-head-text">
+              <span>Using the inspector - DEMO</span>
+            </div>
+          </div>
+        </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
         <h5>Exercise I - Ode to Mondrian</h5>
         <div class="sub-head">
           <div class="sub-head-text">
@@ -548,7 +592,7 @@
           <ul class="child-slide-body-list">
             <li>
               <div class="list-item-container">
-                <span><a href="https://www.clicktorelease.com/code/css3dclouds/" target="_blank">CSS 3D Clouds</a></span>
+                <span><a href="https://www.clicktorelease.com/code/css3dclouds/" target="_blank">CSS 3D Clouds (used with JS)</a></span>
               </div>
             </li>
           </ul>
@@ -557,20 +601,70 @@
 
       <!-- ------------- -->
       <section class="child-slide">
-        <h5>CSS</h5>
+        <h5>CSS Animations</h5>
         <div class="sub-head">
-          <div class="sub-head-text">CSS3 Easing Animations</div>
+          <div class="sub-head-text">Easing</div>
         </div>
         <div class="child-slide-body">
-          <ul class="child-slide-body-list">
-            <li>
-              <div class="list-item-container">
-                +<span></span>
-              </div>
-            </li>
-          </ul>
+          <div id="anim-circles-container">
+            <div id="circle-1" class="anim-circle"></div>
+            <div id="circle-2" class="anim-circle"></div>
+            <div id="circle-3" class="anim-circle"></div>
+            <div id="circle-4" class="anim-circle"></div>
+            <div id="circle-5" class="anim-circle"></div>
+          </div>
+          <pre>
+            <code data-trim data-noescape>
+              &lt;div id=&quot;anim-circles-container&quot;&gt;
+                &lt;div id=&quot;circle-1&quot; class=&quot;anim-circle&quot;&gt;&lt;/div&gt;
+                &lt;div id=&quot;circle-2&quot; class=&quot;anim-circle&quot;&gt;&lt;/div&gt;
+                &lt;div id=&quot;circle-3&quot; class=&quot;anim-circle&quot;&gt;&lt;/div&gt;
+                &lt;div id=&quot;circle-4&quot; class=&quot;anim-circle&quot;&gt;&lt;/div&gt;
+                &lt;div id=&quot;circle-5&quot; class=&quot;anim-circle&quot;&gt;&lt;/div&gt;
+              &lt;/div&gt;
+            </code>
+          </pre>
+          <pre>
+            <code data-trim data-noescape>
+              div.anim-circle {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                opacity: 0.7;
+                position: absolute;
+              }
+
+              div#circle-1 { animation: my-animation 2s ease 0s infinite alternate; }
+              div#circle-2 { animation: my-animation 2s linear 0s infinite alternate; }
+              div#circle-3 { animation: my-animation 2s ease-in 0s infinite alternate; }
+              div#circle-4 { animation: my-animation 2s ease-out 0s infinite alternate; }
+              div#circle-5 { animation: my-animation 2s ease-in-out 0s infinite alternate; }
+              
+              @keyframes my-animation {
+                0% { background: #FFA500; left: 10%; }
+                100% { background: #00caff; left: 90%; }
+              }
+            </code>
+          </pre>
         </div>
       </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+          <h5>CSS Animations</h5>
+          <div class="sub-head">
+            <div class="sub-head-text">Keyframing</div>
+          </div>
+          <div class="child-slide-body">
+            <ul class="child-slide-body-list">
+              <li>
+                <div class="list-item-container">
+                  +<span></span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
 
       <!-- ------------- -->
       <section class="child-slide">
@@ -588,48 +682,21 @@
           </ul>
         </div>
       </section>
-      
+
       <!-- ------------- -->
       <section class="child-slide">
-        <h5>Dev Tools: Inspector</h5>
+        <h5>Exercise II: CSS3</h5>
         <div class="sub-head">
-          <div class="sub-head-text">
-            <span>3 ways to see the inspector</span>
-          </div>
+          <div class="sub-head-text">CSS3 3D Transforms</div>
         </div>
         <div class="child-slide-body">
           <ul class="child-slide-body-list">
             <li>
               <div class="list-item-container">
-                +<span>Go to any website, even these slides, and hit <code>cmd + option + i</code></span>
-              </div>
-            </li>
-            <li>
-              <div class="list-item-container">
-                +<span>Or View > Developer > Developer Tools</span>
-              </div>
-            </li>
-            <li>
-              <div class="list-item-container">
-                +<span>Or right click in a webpage and click 'Inspect'</span>
-              </div>
-            </li>
-            <li>
-              <div class="list-item-container">
-                <img class="child-slide-img" src="https://developers.google.com/web/tools/chrome-devtools/inspect-styles/imgs/elements-panel.png" width="500" height="auto">
+                +<span></span>
               </div>
             </li>
           </ul>
-        </div>
-      </section>
-      
-      <!-- ------------- -->
-      <section class="child-slide">
-        <h5>Dev Tools: Inspector</h5>
-        <div class="sub-head">
-          <div class="sub-head-text">
-            <span>Using the inspector - DEMO</span>
-          </div>
         </div>
       </section>
       
