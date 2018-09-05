@@ -185,3 +185,13 @@ div#bottom-right-narrow-bottom-box {
   background: yellow;
   border-top: 12px solid black;
 }
+
+/* css */
+
+h1#make-art-css {
+  text-transform: uppercase;
+	text-shadow: -3px 0 red, 3px 0 cyan;
+	letter-spacing: 2px;
+	color: white;
+	font-family: "Georgia", serif;
+}
