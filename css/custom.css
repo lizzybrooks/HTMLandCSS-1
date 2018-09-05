@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:100,200,500|Source+Code+Pro:200,300,400');
 
-
 html {
   box-sizing: border-box;
 }
@@ -17,14 +16,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-image: linear-gradient(30deg, #020b1e, #070c16); */
   background: #1a1e2d;
   overflow: hidden;
 }
-
-/* body {
-  background-color: #151515!important;
-} */
 
 div.sub-head-text {
   font-family: "Source Code Pro", monospace;
@@ -64,7 +58,6 @@ div.child-slide-body {
 
 ul.child-slide-body-list > li {
   list-style-type: none;
-  /* display: block; */
 }
 
 div.list-item-container > span {
@@ -84,6 +77,7 @@ img.child-slide-img {
   display: block!important;
   margin-left: auto!important;
   margin-right: auto!important;
+  border: none!important;
 }
 
 .hljs {
@@ -91,7 +85,6 @@ img.child-slide-img {
 }
 
 .reveal pre {
-  /* width: 80%!important; */
   font-size: 0.6em!important;
   box-shadow: none!important;
   margin: 0px auto!important; 
@@ -110,20 +103,85 @@ html {
   cursor: url(//s3-us-west-2.amazonaws.com/s.cdpn.io/3174/cursor.png), auto!important;
 }
 
+/* Mondrian */
+div#mondrian-solution-outer {
+  position: relative;
+}
 
+div#mondrian-solution {
+  width: 400px;
+  height: 400px;
+  /* outline: 5px solid white; */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
-@keyframes cresent {
-  0% {
-    transform: translate(-30px, 30px) scale(0.9);
-    box-shadow: none;
-  }
-  50% {
-    transform: translate(0px, 0px) scale(1.02);
-    box-shadow: 0 0 10px #f9f3f2, 0 0 80px 8px #C7938B;
-    background-color: #efdbd8;
-  }
-  100% {
-    transform: translate(30px, -30px) scale(0.9);
-    box-shadow: none;
-  }
+div#top-left-col {
+  float: left;
+  width: 100px;
+  height: 300px;
+  border-right: 6px solid black;
+}
+
+div.white-box {
+  background: white;
+  height: 50%;
+}
+
+div.white-box.upper {
+  border-bottom: 24px solid black;
+}
+
+div#top-right-col {
+  width: 300px;
+  height: 300px;
+  float: right;
+  background: red;
+  border-left: 6px solid black;
+}
+
+div#bottom-row {
+  width: 100%;
+  height: 100px;
+  float: left;
+  border-top: 12px solid black;
+}
+
+div#bottom-left-box {
+  float: left;
+  width: 100px;
+  height: 100%;
+  background: blue;
+  border-right: 6px solid black;
+}
+
+div#bottom-right-box {
+  width: 300px;
+  height: 100%;
+  float: right;
+  background: white;
+  border-left: 6px solid black;
+}
+
+div#bottom-right-narrow {
+  width: 40px;
+  height: 100%;
+  float: right;
+  border-left: 12px solid black;
+  background: yellow;
+}
+
+div#bottom-right-narrow-top-box {
+  width: 100%;
+  height: 50%;
+  background: white;
+  border-bottom: 12px solid black;
+}
+
+div#bottom-right-narrow-bottom-box {
+  width: 100%;
+  height: 50%;
+  background: yellow;
+  border-top: 12px solid black;
 }
