@@ -198,8 +198,7 @@ h1#make-art-css {
 
 /* Easing */
 div#anim-circles-container {
-  margin: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 48px;
 }
 
 div.anim-circle {
