@@ -16,7 +16,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #1a1e2d;
+  /* background: #1a1e2d; */
+  background: #0d0d1d;
   overflow: hidden;
 }
 
@@ -239,9 +240,85 @@ div#circle-5 {
     background: #FFA500;
     left: 10%;
   }
-
+  
   100% {
     background: #00caff;
     left: 90%;
+  }
+}
+
+/* cube */
+/* adapted from https://codepen.io/mikewagz/pen/KazVLY */
+.cube-container {
+	position: relative;
+	height: 400px;
+}
+
+.cube {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-origin: center center -50px;
+  transform-origin: center center -50px;
+  -webkit-animation: spin 5s infinite linear;
+  animation: spin 5s infinite linear;
+}
+
+.cube__face {
+	width: 200px;
+	height: 200px;
+	background: #95ffe4;
+	opacity: 0.7;
+	border: 5px solid black!important;
+	-webkit-backface-visibility: visible;
+	backface-visibility: visible;
+	position: absolute;
+	-webkit-transform-origin: center center -50px;
+	transform-origin: center center -50px;
+}
+
+.cube__face--up {
+  -webkit-transform: translate(-50%, -50%) rotateX(90deg);
+  transform: translate(-50%, -50%) rotateX(90deg);
+}
+
+.cube__face--down {
+  -webkit-transform: translate(-50%, -50%) rotateX(-90deg);
+  transform: translate(-50%, -50%) rotateX(-90deg);
+}
+
+.cube__face--right {
+  -webkit-transform: translate(-50%, -50%) rotateY(90deg);
+  transform: translate(-50%, -50%) rotateY(90deg);
+}
+
+.cube__face--left {
+  -webkit-transform: translate(-50%, -50%) rotateY(-90deg);
+  transform: translate(-50%, -50%) rotateY(-90deg);
+}
+
+.cube__face--front {
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.cube__face--back {
+  -webkit-transform: translate(-50%, -50%) rotateY(-180deg);
+  transform: translate(-50%, -50%) rotateY(-180deg);
+}
+
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotateX(-360deg) rotateY(-360deg);
+    transform: rotateX(-360deg) rotateY(-360deg);
+  }
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotateX(-360deg) rotateY(-360deg);
+    transform: rotateX(-360deg) rotateY(-360deg);
   }
 }
