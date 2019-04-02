@@ -16,8 +16,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background: #1a1e2d; */
-  background: #0d0d1d;
+  background: #1a1e2d;
   overflow: hidden;
 }
 
@@ -53,7 +52,7 @@ div.disclaimer, div.title-slide-body {
 div.child-slide-body {
   font-family: "Work Sans", sans-serif;
   font-weight: 200;
-  font-size: 20px;
+  font-size: 22px;
   padding: 32px 0px 32px 0px;
 }
 
@@ -119,7 +118,7 @@ img.child-slide-img {
 }
 
 html {
-  cursor: url(//s3-us-west-2.amazonaws.com/s.cdpn.io/3174/cursor.png), auto!important;
+  /* cursor: url(//s3-us-west-2.amazonaws.com/s.cdpn.io/3174/cursor.png), auto!important; */
 }
 
 /* Mondrian */
