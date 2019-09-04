@@ -16,44 +16,63 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #1a1e2d;
+  background: #0c145e;
   overflow: hidden;
 }
 
 div.sub-head-text {
-  font-family: "Source Code Pro", monospace;
+  font-family: 'Space Mono', monospace;
   font-weight: 300;
-  font-size: 0.5em;
-  color: #ff6efc;
-  text-transform: uppercase;
+  font-size: 0.6em;
+  color: #ba9cf5;
+  text-transform: lowercase;
+  /* text-transform: uppercase; */
+}
+
+div.first-sub {
+  font-family: 'Space Mono', monospace;
+  font-weight: 300;
+  font-size: 0.6em;
+  color: #cfcfcf;
 }
 
 h3.title-text {
-  font-family: "Source Code Pro", monospace!important;
+  font-family: "Space Mono", monospace!important;
   font-weight: 300!important;
-  color: #1bc4ff!important;
+  color: #35ac7d!important;
+  font-size: 2em;
+}
+
+h6 {
+  font-family: "Space Mono", monospace!important;
+  font-weight: 300!important;
+  font-size: 5em;
+  color: #e7511b!important;
+  margin-bottom: 12px!important;
+  letter-spacing: 0.08em;
 }
 
 h3, h5 {
-  font-family: "Source Code Pro", monospace!important;
+  font-family: "Space Mono", monospace!important;
   font-weight: 300!important;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   color: #1bc4ff!important;
   margin-bottom: 12px!important;
 }
 
 div.disclaimer, div.title-slide-body {
-  font-family: "Source Code Pro", monospace;
+  font-family: "Space Mono", monospace;
   font-size: 14px;
   padding: 32px;
   line-height: 32px;
 }
 
 div.child-slide-body {
-  font-family: "Work Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 200;
-  font-size: 22px;
+  font-size: 18px;
   padding: 32px 0px 32px 0px;
+  color: #cfcfcf;
 }
 
 ul > li {
@@ -105,7 +124,7 @@ img.child-slide-img {
 .reveal pre {
   font-size: 0.6em!important;
   box-shadow: none!important;
-  margin: 0px auto!important; 
+  margin: 0px auto!important;
 }
 
 .reveal pre code {
@@ -257,7 +276,7 @@ div#circle-5 {
     background: #FFA500;
     left: 10%;
   }
-  
+
   100% {
     background: #00caff;
     left: 90%;
